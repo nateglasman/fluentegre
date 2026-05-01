@@ -1,0 +1,7 @@
+# fluenteGRE - Bilingual GRE Vocabulary Trainer
+# https://fluentegre.me
+
+User-agent: *
+Allow: /
+
+Sitemap: https://fluentegre.me/sitemap.xml

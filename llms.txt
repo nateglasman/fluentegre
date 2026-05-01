@@ -1,0 +1,30 @@
+# fluenteGRE
+
+> Bilingual GRE vocabulary trainer for non-native English speakers.
+
+fluenteGRE is a free, browser-based GRE vocabulary study tool designed specifically for bilingual learners. It helps Spanish, Portuguese, and Italian speakers master 1,184 high-frequency GRE words using their native language as a bridge.
+
+## What it does
+
+- 1,184 GRE vocabulary words organized into 31 study sets of ~40 words each
+- Full bilingual support: every word has a translation, native-language definition, and memory trick in Spanish, Portuguese, and Italian
+- Flashcards with spaced repetition and self-rating (Again / Hard / Good / Easy)
+- Multiple quiz modes: definition matching, translation quizzes, and timed pair matching
+- Progress tracking with mastery scores, streak counting, and per-word analytics
+- Browse mode organized by 23 thematic groups (e.g., Speech & Rhetoric, Moral Judgment, Quantity & Degree)
+- Works entirely in the browser with no account required — progress saves to localStorage
+
+## Who it's for
+
+- Non-native English speakers preparing for the GRE General Test
+- Spanish, Portuguese, and Italian speakers who want to leverage their native language to learn English vocabulary faster
+- Graduate school applicants looking for free, high-quality GRE vocab prep
+- Self-directed learners who prefer flashcard and quiz-based study methods
+
+## How it helps bilingual learners
+
+Each vocabulary word includes a carefully chosen translation in the learner's native language, a definition written in that language, and a mnemonic trick that connects the English word to something familiar in their language. This dual-encoding approach — seeing the word in both English and your native language — has been shown to improve retention compared to English-only study methods.
+
+## URL
+
+https://fluentegre.me
