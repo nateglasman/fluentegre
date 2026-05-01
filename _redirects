@@ -1,6 +1,0 @@
-# SPA fallback for client-side routing
-/flashcards/*  /index.html  200
-/quiz/*        /index.html  200
-/groups        /index.html  200
-/groups/*      /index.html  200
-/progress      /index.html  200
