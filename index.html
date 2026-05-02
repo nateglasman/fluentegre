@@ -63,6 +63,8 @@
   .nav h1 .brand-fluente { color: #7c3aed; }
   .nav h1 .brand-gre { color: #1a1a2e; }
   .nav .brand-tag { font-size: 10px; color: #9ca3af; font-weight: 500; letter-spacing: 0.3px; line-height: 1; margin-top: 2px; }
+  .bmc-btn { padding: 6px 14px; border-radius: 8px; background: #ffdd00; color: #1a1a2e; font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.2s; white-space: nowrap; }
+  .bmc-btn:hover { background: #ffca00; transform: translateY(-1px); }
   .nav-btn { padding: 8px 18px; border-radius: 8px; border: 1px solid #e2e5eb; background: #fff; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s; color: #4b5563; }
   .nav-btn:hover { background: #f9fafb; border-color: #7c3aed; color: #7c3aed; }
   .nav-btn.active { background: #7c3aed; color: #fff; border-color: #7c3aed; }
@@ -253,6 +255,7 @@
     <button class="lang-btn" onclick="switchLang('it')" title="Italiano">🇮🇹<span class="lang-label">Italiano</span></button>
   </div>
   <div class="stats-pill">Mastered: <strong id="masteredCount">0</strong> / <span id="totalCount">40</span></div>
+  <a href="https://buymeacoffee.com/fluentegre" target="_blank" rel="noopener" class="bmc-btn" title="Support fluenteGRE">&#9749; Support</a>
 </div>
 
 <!-- Ad Slot: Leaderboard (below nav) — hidden until AdSense approved -->
@@ -2797,7 +2800,7 @@ document.getElementById('totalCount').textContent = activeWords().length;
   </div>
   <p>Free bilingual GRE vocabulary trainer with 1,184 words across 31 sets.</p>
   <p>Study GRE vocab in English, Spanish, Portuguese, and Italian with flashcards, quizzes, and spaced repetition.</p>
-  <p style="margin-top:12px;"><a href="/about.html" style="color:#7c3aed;text-decoration:none;">About</a> &middot; <a href="/privacy.html" style="color:#7c3aed;text-decoration:none;">Privacy Policy</a> &middot; <a href="/contact.html" style="color:#7c3aed;text-decoration:none;">Contact</a></p>
+  <p style="margin-top:12px;"><a href="/about.html" style="color:#7c3aed;text-decoration:none;">About</a> &middot; <a href="/privacy.html" style="color:#7c3aed;text-decoration:none;">Privacy Policy</a> &middot; <a href="/contact.html" style="color:#7c3aed;text-decoration:none;">Contact</a> &middot; <a href="https://buymeacoffee.com/fluentegre" target="_blank" rel="noopener" style="color:#7c3aed;text-decoration:none;">&#9749; Buy me a coffee</a></p>
   <p style="margin-top:8px;font-size:11px;color:#c4c8d0;">&copy; 2026 fluenteGRE. Built for non-native English speakers preparing for the GRE.</p>
 </footer>
 </body>
