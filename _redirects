@@ -1,0 +1,14 @@
+# SPA fallback — serve index.html for all routes except static files
+/about.html    /about.html    200
+/privacy.html  /privacy.html  200
+/contact.html  /contact.html  200
+/es.html       /es.html       200
+/pt.html       /pt.html       200
+/it.html       /it.html       200
+/spanish-gre-flashcards.html   /spanish-gre-flashcards.html   200
+/portuguese-gre-flashcards.html /portuguese-gre-flashcards.html 200
+/italian-gre-flashcards.html   /italian-gre-flashcards.html   200
+/robots.txt    /robots.txt    200
+/sitemap.xml   /sitemap.xml   200
+/llms.txt      /llms.txt      200
+/*             /index.html    200
