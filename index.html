@@ -77,7 +77,7 @@
 
   /* FLASHCARD */
   .card-container { perspective: 1000px; margin-bottom: 24px; }
-  .flashcard { width: 100%; min-height: 320px; position: relative; cursor: pointer; transition: transform 0.5s; transform-style: preserve-3d; }
+  .flashcard { width: 100%; min-height: 320px; position: relative; cursor: pointer; transition: transform 0.5s, height 0.4s ease; transform-style: preserve-3d; }
   .flashcard.flipped { transform: rotateY(180deg); }
   .card-face { position: absolute; top: 0; left: 0; width: 100%; min-height: 320px; backface-visibility: hidden; border-radius: 16px; padding: 40px 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid #e2e5eb; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
   .card-front { background: #fff; }
@@ -1931,10 +1931,22 @@ function showFlashcard() {
     }
   }
   document.getElementById('flashCounter').textContent = `Card ${flashIdx+1} of ${flashQueue.length}`;
+  // Reset card height to fit front face
+  const fc = document.getElementById('flashcard');
+  requestAnimationFrame(() => {
+    const front = fc.querySelector('.card-front');
+    fc.style.height = Math.max(320, front.scrollHeight) + 'px';
+  });
 }
 
 function flipCard() {
-  document.getElementById('flashcard').classList.toggle('flipped');
+  const fc = document.getElementById('flashcard');
+  fc.classList.toggle('flipped');
+  const isFlipped = fc.classList.contains('flipped');
+  const face = isFlipped ? fc.querySelector('.card-back') : fc.querySelector('.card-front');
+  requestAnimationFrame(() => {
+    fc.style.height = Math.max(320, face.scrollHeight) + 'px';
+  });
 }
 
 function rateCard(score) {
